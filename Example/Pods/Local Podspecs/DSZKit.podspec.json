@@ -1,0 +1,30 @@
+{
+  "name": "DSZKit",
+  "version": "0.1.0",
+  "summary": "常用工具包",
+  "description": "核心代码库",
+  "homepage": "https://github.com/DSZ911226/DSZKit.git",
+  "license": "MIT",
+  "authors": {
+    "邓深圳": "344378745.com"
+  },
+  "source": {
+    "git": "https://github.com/DSZ911226/DSZKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "default_subspecs": [
+    "Core"
+  ],
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "DSZKit/**/*",
+      "public_header_files": "DSZKit/**/*.h",
+      "frameworks": "UIKit"
+    }
+  ]
+}

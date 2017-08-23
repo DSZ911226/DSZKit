@@ -1,0 +1,22 @@
+PODS:
+  - DSZKit/Core (0.1.0)
+
+DEPENDENCIES:
+  - DSZKit/Core (from `https://github.com/DSZ911226/DSZKit.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  DSZKit:
+    :branch: master
+    :git: https://github.com/DSZ911226/DSZKit.git
+
+CHECKOUT OPTIONS:
+  DSZKit:
+    :commit: 13a82e97c8c01bd21e629ca5da626a69e32f144b
+    :git: https://github.com/DSZ911226/DSZKit.git
+
+SPEC CHECKSUMS:
+  DSZKit: 4d949a360d3df5c70136ca9dff4595da9d01a724
+
+PODFILE CHECKSUM: 4010f9f81bbbc35469c25fb389ec07700216717b
+
+COCOAPODS: 1.2.1

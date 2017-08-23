@@ -1,0 +1,20 @@
+platform :ios, '8.0'
+#use_frameworks!
+
+install! 'cocoapods', :deterministic_uuids => false
+
+
+target ‘Demo’ do
+
+    pod "DSZKit",
+   :git => "https://github.com/DSZ911226/DSZKit.git",
+   :subspecs =>  ['Core'],
+   :branch => "master"
+
+
+# FIXME 暂时改用本地代码，方便调试
+#    pod "DSZKit",
+#    :path => '../DSZKit',
+#    :subspecs =>  ['Core']
+
+end
