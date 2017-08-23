@@ -2,7 +2,7 @@
 //  NSData+DSZExt.h
 //  DSZ
 //
-//  Created by HuHao on 15/10/1.
+//  Created by DSZ on 15/10/1.
 //  Copyright © 2015年 DSZ. All rights reserved.
 //
 

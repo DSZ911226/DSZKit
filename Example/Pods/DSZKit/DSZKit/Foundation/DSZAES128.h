@@ -2,8 +2,8 @@
 //  DSZAES128.h
 //  DSZ
 //
-//  Created by Huhao on 2017/3/31.
-//  Copyright © 2017年 八维通. All rights reserved.
+//  Created by DSZ on 2017/3/31.
+//  Copyright © 2017年 zjwist. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

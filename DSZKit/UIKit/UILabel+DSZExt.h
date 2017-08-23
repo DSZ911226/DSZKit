@@ -2,7 +2,7 @@
 //  UILabel+DSZExt
 //
 //  Created by LYB on 16/7/1.
-//  Copyright © 2016年 LYB. All rights reserved.
+//  Copyright © 2016年 zjwist. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -2,7 +2,7 @@
 //  UIViewController+DSZExt.h
 //  DSZSH
 //
-//  Created by HuHao on 1/11/16.
+//  Created by DSZ on 1/11/16.
 //  Copyright © 2016 DSZ. All rights reserved.
 //
 
