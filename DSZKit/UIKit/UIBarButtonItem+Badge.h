@@ -13,7 +13,7 @@
 
 @end
 
-@interface UIBarButtonItem (BWTBadge)
+@interface UIBarButtonItem (DSZBadge)
 
 @property (strong, atomic) UILabel *badge;
 
