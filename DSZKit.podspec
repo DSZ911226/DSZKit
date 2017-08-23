@@ -33,7 +33,6 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |sp|
   sp.source_files     = "DSZKit/**/*"
   sp.public_header_files = 'DSZKit/**/*.h'
-  sp.dependency 'SDWebImage'
   sp.frameworks        = 'UIKit'
   end
 
