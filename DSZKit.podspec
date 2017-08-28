@@ -41,6 +41,7 @@ Pod::Spec.new do |s|
   t.resource = 'DSZBase/DSZBase.bundle'
   t.dependency 'UITableView+FDTemplateLayoutCell', '~> 1.6'
   t.dependency 'MJRefresh'
+  t.dependency 'MJExtension'
   t.dependency 'ReactiveObjC', '~> 3.0.0'
   t.dependency 'DSZKit/Core'
   end
