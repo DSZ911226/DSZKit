@@ -28,13 +28,31 @@ Pod::Spec.new do |s|
   s.platform         = :ios, '7.0'
   s.requires_arc     = true
 
-  s.default_subspec = ['Core']
+  s.default_subspec = ['Core', 'Base', 'Tools']
 
   s.subspec 'Core' do |sp|
   sp.source_files     = "DSZKit/**/*"
   sp.public_header_files = 'DSZKit/**/*.h'
   sp.frameworks        = 'UIKit'
   end
+
+  s.subspec 'Base' do |t|
+  t.source_files = "DSZBase/*.{h,m}"
+  t.resource = 'DSZBase/DSZBase.bundle'
+  t.dependency 'UITableView+FDTemplateLayoutCell', '~> 1.6'
+  t.dependency 'MJRefresh'
+  t.dependency 'ReactiveObjC', '~> 3.0.0'
+  t.dependency 'DSZKit/Core'
+  end
+
+  s.subspec 'Tools' do |t|
+  t.source_files = "DSZTools/*.{h,m}"
+  t.dependency 'SDWebImage'
+  end
+
+
+
+
 
 
 end
