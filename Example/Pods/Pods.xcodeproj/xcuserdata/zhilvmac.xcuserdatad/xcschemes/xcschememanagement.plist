@@ -9,7 +9,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Demo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveObjC.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UITableView+FDTemplateLayoutCell.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1E3B4EC9C03C7D919A0071DD</key>
+		<key>14FE79652DDEB6614680CA95</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6138B89CBA747A0BDA3FF3FA</key>
+		<key>221CCD817F53DE3633C43A47</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4AE177105B65EA1EE1D9CD9A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7FC5B2052CDAC8425F73352E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC2B0194558EDF2F54E09DB2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D50140D2A3BF3B0A6B225B46</key>
 		<dict>
 			<key>primary</key>
 			<true/>

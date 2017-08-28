@@ -1,8 +1,23 @@
 PODS:
+  - DSZKit/Base (0.1.0):
+    - DSZKit/Core
+    - MJRefresh
+    - ReactiveObjC (~> 3.0.0)
+    - UITableView+FDTemplateLayoutCell (~> 1.6)
   - DSZKit/Core (0.1.0)
+  - DSZKit/Tools (0.1.0):
+    - SDWebImage
+  - MJRefresh (3.1.12)
+  - ReactiveObjC (3.0.0)
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
+  - UITableView+FDTemplateLayoutCell (1.6)
 
 DEPENDENCIES:
+  - DSZKit/Base (from `https://github.com/DSZ911226/DSZKit.git`, branch `master`)
   - DSZKit/Core (from `https://github.com/DSZ911226/DSZKit.git`, branch `master`)
+  - DSZKit/Tools (from `https://github.com/DSZ911226/DSZKit.git`, branch `master`)
 
 EXTERNAL SOURCES:
   DSZKit:
@@ -11,12 +26,16 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   DSZKit:
-    :commit: 13a82e97c8c01bd21e629ca5da626a69e32f144b
+    :commit: '09133c68d85d9d6d32d65996f7dc01829e6e232a'
     :git: https://github.com/DSZ911226/DSZKit.git
 
 SPEC CHECKSUMS:
-  DSZKit: 4d949a360d3df5c70136ca9dff4595da9d01a724
+  DSZKit: 8cd273b5d237d24305b235593b44f94f922745cf
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
 
-PODFILE CHECKSUM: 4010f9f81bbbc35469c25fb389ec07700216717b
+PODFILE CHECKSUM: 7d610191316579a6798c051e938c702c9cef7131
 
 COCOAPODS: 1.2.1

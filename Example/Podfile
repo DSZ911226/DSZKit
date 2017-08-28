@@ -8,7 +8,7 @@ target ‘Demo’ do
 
     pod "DSZKit",
    :git => "https://github.com/DSZ911226/DSZKit.git",
-   :subspecs =>  ['Core'],
+   :subspecs =>  ['Core','Base', 'Tools'],
    :branch => "master"
 
 

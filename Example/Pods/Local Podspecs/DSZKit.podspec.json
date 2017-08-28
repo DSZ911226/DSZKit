@@ -17,7 +17,9 @@
   },
   "requires_arc": true,
   "default_subspecs": [
-    "Core"
+    "Core",
+    "Base",
+    "Tools"
   ],
   "subspecs": [
     {
@@ -25,6 +27,34 @@
       "source_files": "DSZKit/**/*",
       "public_header_files": "DSZKit/**/*.h",
       "frameworks": "UIKit"
+    },
+    {
+      "name": "Base",
+      "source_files": "DSZBase/*.{h,m}",
+      "resources": "DSZBase/DSZBase.bundle",
+      "dependencies": {
+        "UITableView+FDTemplateLayoutCell": [
+          "~> 1.6"
+        ],
+        "MJRefresh": [
+
+        ],
+        "ReactiveObjC": [
+          "~> 3.0.0"
+        ],
+        "DSZKit/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "Tools",
+      "source_files": "DSZTools/*.{h,m}",
+      "dependencies": {
+        "SDWebImage": [
+
+        ]
+      }
     }
   ]
 }
