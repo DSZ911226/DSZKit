@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "FirstTableVIewController.h"
 @interface ViewController ()
 
 @end
@@ -23,6 +23,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)btnAction:(id)sender {
+    FirstTableVIewController *VC = [FirstTableVIewController new];
+    [self presentViewController:VC animated:YES completion:nil];
+    
 }
 
 

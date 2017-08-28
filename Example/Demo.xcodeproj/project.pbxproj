@@ -15,6 +15,10 @@
 		050F5F401F4D8BDE001E5C49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050F5F3E1F4D8BDE001E5C49 /* LaunchScreen.storyboard */; };
 		050F5F4B1F4D8BDE001E5C49 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 050F5F4A1F4D8BDE001E5C49 /* DemoTests.m */; };
 		050F5F561F4D8BDE001E5C49 /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 050F5F551F4D8BDE001E5C49 /* DemoUITests.m */; };
+		051F85FF1F53BDEC00A2109A /* FirstTableVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 051F85FE1F53BDEC00A2109A /* FirstTableVIewController.m */; };
+		051F86011F53D94500A2109A /* BusinessManage.json in Resources */ = {isa = PBXBuildFile; fileRef = 051F86001F53D94500A2109A /* BusinessManage.json */; };
+		051F86041F53DE8B00A2109A /* Firstmodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 051F86031F53DE8B00A2109A /* Firstmodel.m */; };
+		051F86071F53E09100A2109A /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 051F86061F53E09100A2109A /* TableViewCell.m */; };
 		92310C5037F741952964CA03 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0E165FE0449CD0D0C8A7C1 /* libPods-Demo.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +56,13 @@
 		050F5F511F4D8BDE001E5C49 /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		050F5F551F4D8BDE001E5C49 /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		050F5F571F4D8BDE001E5C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		051F85FD1F53BDEC00A2109A /* FirstTableVIewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTableVIewController.h; sourceTree = "<group>"; };
+		051F85FE1F53BDEC00A2109A /* FirstTableVIewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTableVIewController.m; sourceTree = "<group>"; };
+		051F86001F53D94500A2109A /* BusinessManage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BusinessManage.json; sourceTree = "<group>"; };
+		051F86021F53DE8B00A2109A /* Firstmodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firstmodel.h; sourceTree = "<group>"; };
+		051F86031F53DE8B00A2109A /* Firstmodel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Firstmodel.m; sourceTree = "<group>"; };
+		051F86051F53E09100A2109A /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		051F86061F53E09100A2109A /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		AA0788FF76F62F5081D11B3D /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		C1BD9B58303A17FED840BB34 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		CF0E165FE0449CD0D0C8A7C1 /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +123,13 @@
 				050F5F341F4D8BDE001E5C49 /* AppDelegate.m */,
 				050F5F361F4D8BDE001E5C49 /* ViewController.h */,
 				050F5F371F4D8BDE001E5C49 /* ViewController.m */,
+				051F86051F53E09100A2109A /* TableViewCell.h */,
+				051F86061F53E09100A2109A /* TableViewCell.m */,
+				051F86021F53DE8B00A2109A /* Firstmodel.h */,
+				051F86031F53DE8B00A2109A /* Firstmodel.m */,
+				051F85FD1F53BDEC00A2109A /* FirstTableVIewController.h */,
+				051F85FE1F53BDEC00A2109A /* FirstTableVIewController.m */,
+				051F86001F53D94500A2109A /* BusinessManage.json */,
 				050F5F391F4D8BDE001E5C49 /* Main.storyboard */,
 				050F5F3C1F4D8BDE001E5C49 /* Assets.xcassets */,
 				050F5F3E1F4D8BDE001E5C49 /* LaunchScreen.storyboard */,
@@ -276,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				051F86011F53D94500A2109A /* BusinessManage.json in Resources */,
 				050F5F401F4D8BDE001E5C49 /* LaunchScreen.storyboard in Resources */,
 				050F5F3D1F4D8BDE001E5C49 /* Assets.xcassets in Resources */,
 				050F5F3B1F4D8BDE001E5C49 /* Main.storyboard in Resources */,
@@ -351,6 +370,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				051F85FF1F53BDEC00A2109A /* FirstTableVIewController.m in Sources */,
+				051F86071F53E09100A2109A /* TableViewCell.m in Sources */,
+				051F86041F53DE8B00A2109A /* Firstmodel.m in Sources */,
 				050F5F381F4D8BDE001E5C49 /* ViewController.m in Sources */,
 				050F5F351F4D8BDE001E5C49 /* AppDelegate.m in Sources */,
 				050F5F321F4D8BDE001E5C49 /* main.m in Sources */,

@@ -1,12 +1,14 @@
 PODS:
   - DSZKit/Base (0.1.0):
     - DSZKit/Core
+    - MJExtension
     - MJRefresh
     - ReactiveObjC (~> 3.0.0)
     - UITableView+FDTemplateLayoutCell (~> 1.6)
   - DSZKit/Core (0.1.0)
   - DSZKit/Tools (0.1.0):
     - SDWebImage
+  - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
   - ReactiveObjC (3.0.0)
   - SDWebImage (4.1.0):
@@ -26,11 +28,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   DSZKit:
-    :commit: '09133c68d85d9d6d32d65996f7dc01829e6e232a'
+    :commit: 5365829c4d4e893246bcdc960440cb90ee837fa7
     :git: https://github.com/DSZ911226/DSZKit.git
 
 SPEC CHECKSUMS:
-  DSZKit: 8cd273b5d237d24305b235593b44f94f922745cf
+  DSZKit: b8d8cca024236938de78921b138de01bb595cfa2
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4

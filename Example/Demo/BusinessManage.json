@@ -1,0 +1,74 @@
+ [
+  {
+  "img": "icon_buy",
+  "state": 1,
+  "name": "采购进货",
+  "num": 1
+  },
+  {
+  "img": "icon_pay",
+  "state": 0,
+  "name": "供应商打款",
+  "num": 2
+  },
+  {
+  "img": "icon_dz_gonyin",
+  "state": 0,
+  "name": "供应商对账",
+  "num": 3
+  },
+  {
+  "img": "icon_stock_out",
+  "state": 1,
+  "name": "销售出库",
+  "num": 4
+  },
+  {
+  "img": "icon_khhk",
+  "state": 0,
+  "name": "客户回款",
+  "num": 5
+  },
+  {
+  "img": "icon_dz_costm",
+  "state": 0,
+  "name": "客户对账",
+  "num": 6
+  },
+  {
+  "img": "icon_stock_count",
+  "state": 0,
+  "name": "仓库盘点",
+  "num": 7
+  },
+  {
+  "img": "icon_balance",
+  "state": 0,
+  "name": "门店结算",
+  "num": 8
+  },
+  {
+  "img": "icon_jsjl",
+  "state": 0,
+  "name": "结算记录",
+  "num": 9
+  },
+  {
+  "img": "icon_fee",
+  "state": 0,
+  "name": "记一笔",
+  "num": 10
+  },
+  {
+  "img": "icon_feelist",
+  "state": 0,
+  "name": "记一笔列表",
+  "num": 12
+  },
+  {
+  "img": "btn_filter",
+  "state": 1,
+  "name": "更多",
+  "num": 11
+  }
+  ]

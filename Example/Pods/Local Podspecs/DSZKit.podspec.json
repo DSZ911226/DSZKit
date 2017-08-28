@@ -39,6 +39,9 @@
         "MJRefresh": [
 
         ],
+        "MJExtension": [
+
+        ],
         "ReactiveObjC": [
           "~> 3.0.0"
         ],
