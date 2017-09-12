@@ -52,6 +52,11 @@ Pod::Spec.new do |s|
   t.dependency 'SDWebImage'
   end
 
+  s.subspec 'QRcode' do |t|
+  t.resource = 'QRcode/QRcode.bundle'
+  t.source_files = "QRcode/*.{h,m}"
+  t.dependency 'ZXingObjC'
+  end
 
 
 
