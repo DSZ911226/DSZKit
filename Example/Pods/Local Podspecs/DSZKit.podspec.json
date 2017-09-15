@@ -42,6 +42,9 @@
         "MJExtension": [
 
         ],
+        "Masonry": [
+
+        ],
         "ReactiveObjC": [
           "~> 3.0.0"
         ],
@@ -55,6 +58,16 @@
       "source_files": "DSZTools/*.{h,m}",
       "dependencies": {
         "SDWebImage": [
+
+        ]
+      }
+    },
+    {
+      "name": "QRcode",
+      "resources": "QRcode/QRcode.bundle",
+      "source_files": "QRcode/*.{h,m}",
+      "dependencies": {
+        "ZXingObjC": [
 
         ]
       }

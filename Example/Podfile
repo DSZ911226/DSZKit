@@ -6,10 +6,10 @@ install! 'cocoapods', :deterministic_uuids => false
 
 target ‘Demo’ do
 
-    pod "DSZKit",
-   :git => "https://github.com/DSZ911226/DSZKit.git",
-   :subspecs =>  ['Core','Base', 'Tools'],
-   :branch => "master"
+#    pod "DSZKit",
+#   :git => "https://github.com/DSZ911226/DSZKit.git",
+#   :subspecs =>  ['Core','Base', 'Tools'],
+#   :branch => "master"
 
 
 # FIXME 暂时改用本地代码，方便调试
