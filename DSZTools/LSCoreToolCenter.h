@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 
-@interface LSCoreToolCenter : NSObject
+@interface DSCoreToolCenter : NSObject
 
 extern void ShowSuccessStatus(NSString *statues);
 extern void ShowErrorStatus(NSString *statues);

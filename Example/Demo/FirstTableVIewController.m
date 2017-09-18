@@ -19,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     [self p_initData];
     [self p_initView];
 }

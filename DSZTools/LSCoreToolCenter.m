@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 王隆帅. All rights reserved.
 //
 
-#import "LSCoreToolCenter.h"
+#import "DSCoreToolCenter.h"
 
 #import <SDWebImageManager.h>
 #import <SDWebImageCompat.h>
@@ -14,7 +14,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <DSZKitMacro.h>
 
-@implementation LSCoreToolCenter
+@implementation DSCoreToolCenter
 
 + (void)load{
    

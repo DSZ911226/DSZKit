@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "FirstTableVIewController.h"
 #import <DSZKitMacro.h>
+#import <DSZRACPhotoTools.h>
 @interface ViewController ()
 
 @end
@@ -26,8 +27,14 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)btnAction:(id)sender {
-    FirstTableVIewController *VC = [FirstTableVIewController new];
-    [self presentViewController:VC animated:YES completion:nil];
+    
+    
+    [[[DSZRACPhotoTools new] takePhotoWithVC:self photoSizeType:PhotoSizeSquare isPresent:NO hasKuang:YES] subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@",x);
+    }];
+//    
+//    FirstTableVIewController *VC = [FirstTableVIewController new];
+//    [self presentViewController:VC animated:YES completion:nil];
     
 }
 
