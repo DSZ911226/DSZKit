@@ -5,6 +5,7 @@ PODS:
     - MJExtension
     - MJRefresh
     - ReactiveObjC (~> 3.0.0)
+    - SVProgressHUD
     - UITableView+FDTemplateLayoutCell (~> 1.6)
   - DSZKit/Core (0.1.0)
   - DSZKit/Tools (0.1.0):
@@ -16,6 +17,7 @@ PODS:
   - SDWebImage (4.1.0):
     - SDWebImage/Core (= 4.1.0)
   - SDWebImage/Core (4.1.0)
+  - SVProgressHUD (2.1.2)
   - UITableView+FDTemplateLayoutCell (1.6)
 
 DEPENDENCIES:
@@ -30,18 +32,19 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   DSZKit:
-    :commit: 0e25e419598cefda434b64c24013c9d659993c1f
+    :commit: 2846a613b8c2b9bc3e038a4c011d6f74f01d721e
     :git: https://github.com/DSZ911226/DSZKit.git
 
 SPEC CHECKSUMS:
-  DSZKit: 8f6d968367bcc9d2df3a3879bdaa5dbd8f7965bf
+  DSZKit: d03886af719e828598bb1a724d4c8fe968cc632a
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
 
-PODFILE CHECKSUM: 7d610191316579a6798c051e938c702c9cef7131
+PODFILE CHECKSUM: d86bf66ac26981722e07e0b6d5c6c2d2f3bdfa83
 
 COCOAPODS: 1.2.1

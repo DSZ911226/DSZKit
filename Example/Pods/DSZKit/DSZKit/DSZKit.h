@@ -48,7 +48,6 @@
 //#import "PayToolHead.h"
 #import <ReactiveObjC/ReactiveObjC.h>
 #import "DSZBaseViewModel.h"
-#import "DSZSSKeychain+DSZExt.h"
 
 
 #endif /* DSZKit_h */

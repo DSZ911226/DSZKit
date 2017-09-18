@@ -12,13 +12,13 @@
 #import <SDWebImageCompat.h>
 #import <SVProgressHUD.h>
 #import <AVFoundation/AVFoundation.h>
-
+#import <DSZKitMacro.h>
 
 @implementation LSCoreToolCenter
 
 + (void)load{
    
-    [SVProgressHUD setBackgroundColor:RGBACOLOR(0, 0, 0, 0.8)];
+    [SVProgressHUD setBackgroundColor:UIColorFrom10RGBA(0, 0, 0, 0.8)];
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
     [SVProgressHUD setInfoImage:nil];
 }

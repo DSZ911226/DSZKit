@@ -10,9 +10,7 @@
 #import "NSData+DSZExt.h"
 #import "NSDate+DSZExt.h"
 #import "NSNumber+DSZExt.h"
-#import "DSZSSKeychain.h"
 #import "DSZKitMacro.h"
-#import "RSA.h"
 #import "NSString+DSZExt.h"
 #import "DSZAES128.h"
 #import <CommonCrypto/CommonDigest.h>
@@ -33,36 +31,7 @@ static inline CGSize CGSizeCeil(CGSize size) {
 @implementation NSString (DSZExt)
 
 
-#define kDeviceUUID @"DeviceUUID"         // 设备序列号
 
-+ (NSString *)deviceUUID {
-    NSString * bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
-
-    NSString *UUID = [[NSUserDefaults standardUserDefaults] stringForKey:kDeviceUUID];
-    NSString *string = [self p_returnDeviceID:UUID bundleId:bundleIdentifier];
-
-    return string;
-}
-
-+ (NSString *)p_returnDeviceID:(NSString *)deviceID
-                      bundleId:(NSString *)bundleIdentifier {
-
-    NSString *device = deviceID;
-    if(device.length == 0) {
-
-        device = [DSZSSKeychain passwordForService:bundleIdentifier account:bundleIdentifier];
-
-        if(device.length == 0) {
-            NSString *UUID = [self stringWithUUID];
-            device = [[NSString stringWithFormat:@"%@%@",UUID, bundleIdentifier] md5String];
-            [DSZSSKeychain setPassword:device forService:bundleIdentifier account:bundleIdentifier];
-        }
-
-        [[NSUserDefaults standardUserDefaults] setObject:device forKey:kDeviceUUID];
-    }
-    
-    return device;
-}
 
 
 + (NSString *)stringWithUUID {
@@ -731,70 +700,7 @@ static inline CGSize CGSizeCeil(CGSize size) {
     return NO;
 }
 
-+ (NSString *)sign:(NSDictionary *)params {
 
-    NSString *signStr = @"";
-
-    NSArray *keys = [params allKeys];
-    NSArray *array = [keys sortedArrayUsingSelector:@selector(compare:)];
-
-    NSMutableArray *paramArray = [NSMutableArray arrayWithCapacity:1];
-
-    // 先进行筛选, 去除NSData数据
-    for (id key in array) {
-        id obj = params[key];
-
-        if ([obj isKindOfClass:[NSData class]]) {
-            continue;
-        }
-
-        if([obj isKindOfClass:[NSString class]] && [obj isEqualToString:@""]) {
-            continue;
-        }
-
-        if ([obj isKindOfClass:[NSNull class]]) {
-            continue;
-        }
-
-        NSString *item = [NSString stringWithFormat:@"%@=%@", key, obj];
-        [paramArray addObject:item];
-    }
-
-    NSString *result = [paramArray componentsJoinedByString:@"&"];
-    NSString *waitMD5 = result.stringByRemovingPercentEncoding;
-    
-    DSZLog(@"待加载参数 ===== %@", waitMD5);
-    
-    signStr = [waitMD5 md5String];
-    
-    NSString *pubkey = @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTof8hyG+rbPI15ZlEyarvw6pyFrL8r6oc/dMaSTSBrA9RMCjhOLjnPBnOszqSNia+D6VO0F+PEo+bwCG8wCNLg90YNo7dBTj9xcplWLGx/vesK2XqdDovV+9aj3cW388ajOAHcfA5Mg8ui9FrnyAL5NyJXjtTuKOhBT5Er/vMgwIDAQAB";
-    
-    NSString *encrypted = [RSA encryptString:signStr publicKey:pubkey];
-    
-    return encrypted;
-}
-
-+ (NSString *)newSign:(NSString *)params {
-    
-    NSString *md5 = [[params md5String] uppercaseString];
-
-    NSString *pubkey = @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCe7kxTTEHqe00ooigjsSpv9tvYaeaow0RTOx1gTkth/ypV6/QkVh9SkmQhgcWqzHvvCodNEje1rHBg75wxI3rPOuWlyQyNJnpMXdwK4T3WZ63+bIvEiEAEUl2xN5eYwpQg0VXTADNzXQKVrnWMFO2uT6OARev2HA2bNcFvvIDehwIDAQAB";
-    
-    NSString *encrypted = [RSA encryptString:md5 publicKey:pubkey];
-    
-    return encrypted;
-}
-
-+ (NSString *)decryptString:(NSString *)signature {
-    
-    if (signature.length == 0) {
-        return @"";
-    }
-
-    NSString *pubkey = @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCe7kxTTEHqe00ooigjsSpv9tvYaeaow0RTOx1gTkth/ypV6/QkVh9SkmQhgcWqzHvvCodNEje1rHBg75wxI3rPOuWlyQyNJnpMXdwK4T3WZ63+bIvEiEAEUl2xN5eYwpQg0VXTADNzXQKVrnWMFO2uT6OARev2HA2bNcFvvIDehwIDAQAB";
-    NSString *md5 = [RSA decryptString:signature publicKey:pubkey];
-    return md5;
-}
 
 
 + (NSString *)sequence {
@@ -813,14 +719,7 @@ static inline CGSize CGSizeCeil(CGSize size) {
     return uuid;
 }
 
-+ (NSString *)encryptRandom:(NSString *)value {
 
-    NSString *pubkey = @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCJvMP/h6ulTDWD0uhwv/mOYEaWU+uEAY5rvxrxl0+kN/6PZZmX5RP1PrVtQ6+WEo7Ss9BTv4/tO7SqY4JBYkTENrFafDH3WXTYJUVP4SOARlp/KNgO+SlKxTwwvsq3XDL/ej0ja+1Dk4lVzrmzJWOdWcjrh6hfijZKOgzjWejJgwIDAQAB";
-    
-    NSString *encrypted = [RSA encryptString:value publicKey:pubkey];
-    
-    return encrypted;
-}
 
 + (NSString *)p_random:(NSInteger)count {
     

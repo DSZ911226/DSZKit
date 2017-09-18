@@ -45,6 +45,9 @@
         "Masonry": [
 
         ],
+        "SVProgressHUD": [
+
+        ],
         "ReactiveObjC": [
           "~> 3.0.0"
         ],

@@ -12,9 +12,6 @@ target ‘Demo’ do
    :branch => "master"
 
 
-# FIXME 暂时改用本地代码，方便调试
-#    pod "DSZKit",
-#    :path => '../DSZKit',
-#    :subspecs =>  ['Core']
+
 
 end

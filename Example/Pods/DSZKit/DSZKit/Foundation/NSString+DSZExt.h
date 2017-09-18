@@ -13,13 +13,6 @@
 @interface NSString (DSZExt)
 
 
-/**
- *  设备唯一标识
- *  UUID 存放到系统，App卸载后再次安装也能获取到此UUID
- *
- *  @return UUID
- */
-+ (NSString *)deviceUUID;
 
 
 /**
@@ -39,17 +32,6 @@
 - (NSString *)md5String;
 
 
-/**
- * 网络签名方法，服务端共用参数使用
- */
-+ (NSString *)sign:(NSDictionary *)params DSZDEPRECATED(1_13);
-
-
-/**
- * 最新协议的网络签名方法，服务端共用参数使用
- */
-+ (NSString *)newSign:(NSString *)params DSZDEPRECATED(1_13);
-
 
 /**
  * RSA解密
@@ -67,11 +49,6 @@
  * 返回16位随机字符串
  */
 + (NSString *)random16;
-
-/**
- * 加密字段，服务端共用参数使用
- */
-+ (NSString *)encryptRandom:(NSString *)value DSZDEPRECATED(1_13);
 
 /**
  *  16进制字符串转换成10进制字符串
