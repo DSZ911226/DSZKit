@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DSZKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,47 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>015B5F724C35C19A37CBAC27</key>
+		<key>036E200A30C4F0848772527D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2A58CDF704F1AA41ADC93372</key>
+		<key>233D000B2353478EFFEF15B5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2A7E525F0952BDD3ED663993</key>
+		<key>2FD839651554A7D202FEFD20</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4EBB1D08F9C2E0A11E6D63DE</key>
+		<key>5BDA7E93C425D78B25AC9A3E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5B214F7D53C5F75C0FF50663</key>
+		<key>6020BDCE4DF87689FF7D28DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6B9125911F072B35AE3E1A22</key>
+		<key>609F75C209625DB33405543D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BB5A71AC33CD343056B6A733</key>
+		<key>61CC71D6F510380DEC4902FD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C39F9AD22CCFED1F7C6E4D65</key>
+		<key>6B1E7FACB3BFFDDBDC1233D5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F3F91035AD46F7945AE1FA64</key>
+		<key>C9BE682CA8C9A735E69FC70F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FCCBCC918BF3DE6827AAAEAA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

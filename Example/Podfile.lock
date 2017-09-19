@@ -1,5 +1,21 @@
 PODS:
+  - AFNetworking (3.0.4):
+    - AFNetworking/NSURLSession (= 3.0.4)
+    - AFNetworking/Reachability (= 3.0.4)
+    - AFNetworking/Security (= 3.0.4)
+    - AFNetworking/Serialization (= 3.0.4)
+    - AFNetworking/UIKit (= 3.0.4)
+  - AFNetworking/NSURLSession (3.0.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.0.4)
+  - AFNetworking/Security (3.0.4)
+  - AFNetworking/Serialization (3.0.4)
+  - AFNetworking/UIKit (3.0.4):
+    - AFNetworking/NSURLSession
   - DSZKit/Base (0.1.0):
+    - AFNetworking (~> 3.0.4)
     - DSZKit/Core
     - Masonry
     - MJExtension
@@ -32,11 +48,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   DSZKit:
-    :commit: 9b9c2bd477b51e0dd0170cd8da97604eef96598d
+    :commit: 63aa1f283d3c633d85b332129a79678078acad4c
     :git: https://github.com/DSZ911226/DSZKit.git
 
 SPEC CHECKSUMS:
-  DSZKit: d03886af719e828598bb1a724d4c8fe968cc632a
+  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  DSZKit: a04fde01987f1403ff0a6543150df2c3343f20e0
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806

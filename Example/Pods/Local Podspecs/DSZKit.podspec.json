@@ -51,6 +51,9 @@
         "ReactiveObjC": [
           "~> 3.0.0"
         ],
+        "AFNetworking": [
+          "~> 3.0.4"
+        ],
         "DSZKit/Core": [
 
         ]
