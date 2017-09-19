@@ -10,6 +10,7 @@
 #import "FirstTableVIewController.h"
 #import <DSZKitMacro.h>
 #import <DSZRACPhotoTools.h>
+#import "Firstmodel.h"
 @interface ViewController ()
 
 @end
@@ -28,9 +29,8 @@
 }
 - (IBAction)btnAction:(id)sender {
     
-    
-    [[[DSZRACPhotoTools new] takePhotoWithVC:self photoSizeType:PhotoSizeSquare isPresent:NO hasKuang:YES] subscribeNext:^(id  _Nullable x) {
-        NSLog(@"%@",x);
+    [[Firstmodel buzhidao] subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@....%@",x[0],x[1]);
     }];
 //    
 //    FirstTableVIewController *VC = [FirstTableVIewController new];

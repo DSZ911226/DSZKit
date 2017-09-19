@@ -7,9 +7,26 @@
 //
 
 #import "Firstmodel.h"
-
 @implementation Firstmodel
 - (void)DSZ_init {
     
 }
+
++ (RACSignal *)buzhidao {
+    
+    
+    
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [subscriber sendNext:RACTuplePack(@"1", @"2")];
+        [subscriber sendCompleted];
+        
+        return nil;
+    }];
+    return signal;
+
+    
+    
+    
+}
+
 @end
