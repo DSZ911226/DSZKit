@@ -53,11 +53,7 @@
     if ([array count] > 0) {
         [self addItems:[Firstmodel mj_objectArrayWithKeyValuesArray:array]];
     }
-
     [self reloadTableView];
- 
-    
-    
 }
 - (void)configTableViewSource {
     kWeakSelf

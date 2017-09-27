@@ -29,12 +29,9 @@
 }
 - (IBAction)btnAction:(id)sender {
     
-    [[Firstmodel buzhidao] subscribeNext:^(id  _Nullable x) {
-        NSLog(@"%@....%@",x[0],x[1]);
-    }];
-//    
-//    FirstTableVIewController *VC = [FirstTableVIewController new];
-//    [self presentViewController:VC animated:YES completion:nil];
+    //
+    FirstTableVIewController *VC = [FirstTableVIewController new];
+    [self presentViewController:VC animated:YES completion:nil];
     
 }
 

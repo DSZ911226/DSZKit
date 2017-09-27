@@ -31,23 +31,42 @@ NSURLSessionTask *currentTask = nil;//当前的任务
 }
 
 
-+(RACSignal *)RequestWithType:(REQUEST_TYPE)requestType responseClass:(Class)responseClass urlStr:(NSString *)urlStr parameters:(NSString *)parameters success:(HttpSuccessBlock)success failure:(FailureBlock)failure {
++(RACSignal *)RequestWithType:(REQUEST_TYPE)requestType urlStr:(NSString *)urlStr parameters:(NSDictionary *)parameters success:(HttpSuccessBlock)success failure:(FailureBlock)failure {
     AFHTTPSessionManager *manager = [DSZInterFace sharedHTTPSession];
     
-    if (requestType == POST) {
-        currentTask = [manager POST:url parameters:dic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+       
+        if (requestType == POST) {
+            currentTask = [manager POST:urlStr parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                
+                [subscriber sendNext:responseObject];
+                [subscriber sendCompleted];
+                
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                [subscriber sendNext:error];
+                [subscriber sendCompleted];
+            }];
             
-            
-        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        }else{
+            currentTask = [manager GET:urlStr parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                [subscriber sendNext:responseObject];
+                [subscriber sendCompleted];
+                
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                [subscriber sendNext:error];
+                [subscriber sendCompleted];
+            }];
+        }
+
+        
+        return [RACDisposable disposableWithBlock:^{
             
         }];
-
-    }else{
         
-    }
+    }];
     
     
-    
+    return signal;
     
 }
 

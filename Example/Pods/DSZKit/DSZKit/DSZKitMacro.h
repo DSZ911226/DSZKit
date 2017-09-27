@@ -80,7 +80,6 @@
 #define UIColorFrom10RGB(RED, GREEN, BLUE) [UIColor colorWithRed:RED/255.0 green:GREEN/255.0 blue:BLUE/255.0 alpha:1.0]
 
 #define UIColorFrom10RGBA(RED, GREEN, BLUE, Alpha) [UIColor colorWithRed:RED/255.0 green:GREEN/255.0 blue:BLUE/255.0 alpha:Alpha]
-
 #define URL(url) [NSURL URLWithString:url]
 #define string(str1,str2) [NSString stringWithFormat:@"%@%@",str1,str2]
 #define s_str(str1) [NSString stringWithFormat:@"%@",str1]
@@ -96,7 +95,6 @@
 #define YC_YAHEI_FONT(FONTSIZE) [UIFont fontWithName:@"MicrosoftYaHei" size:(FONTSIZE)]
 // 英文 和 数字
 #define YC_ENGLISH_FONT(FONTSIZE) [UIFont fontWithName:@"Helvetica Light" size:(FONTSIZE)]
-
 #define kAppDelegate ((DSZAppDelegate *)[[UIApplication sharedApplication] delegate])
 
 #pragma mark - 日志打印
